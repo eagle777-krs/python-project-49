@@ -3,11 +3,14 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/522aebdeeee79bb26479/maintainability)](https://codeclimate.com/github/eagle777-krs/python-project-/maintainability)
 
-#How to install
-`#install uv package manager`
-`git clone https://github.com/eagle777-krs/python-project-49`
-`cd python-project-49`
-`make install`
+# How to install
+
+```bash
+# install uv package manager
+git clone https://github.com/eagle777-krs/python-project-49
+cd python-project-49
+make install
+
 # Games
 
 ## Checking a number for even
@@ -17,3 +20,7 @@ Command to start the game - `make brain-even`
 ## Calculator
 Command to start the game - `make brain-calc`
 <a href="https://asciinema.org/a/698177" target="_blank"><img src="https://asciinema.org/a/698177.svg" /></a>
+
+## Greatest Common Divisor
+Command to start the game - `make brain-gcm`
+<a href="https://asciinema.org/a/698220" target="_blank"><img src="https://asciinema.org/a/698220.svg" /></a>
