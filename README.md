@@ -10,6 +10,7 @@
 git clone https://github.com/eagle777-krs/python-project-49
 cd python-project-49
 make install
+```
 
 # Games
 
@@ -24,3 +25,7 @@ Command to start the game - `make brain-calc`
 ## Greatest Common Divisor
 Command to start the game - `make brain-gcm`
 <a href="https://asciinema.org/a/698220" target="_blank"><img src="https://asciinema.org/a/698220.svg" /></a>
+
+## Arithmetic progression
+Command to start the game - `make brain-progression`
+<a href="https://asciinema.org/a/698774" target="_blank"><img src="https://asciinema.org/a/698774.svg" /></a>
