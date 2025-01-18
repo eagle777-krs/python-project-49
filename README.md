@@ -29,3 +29,7 @@ Command to start the game - `make brain-gcm`
 ## Arithmetic progression
 Command to start the game - `make brain-progression`
 <a href="https://asciinema.org/a/698774" target="_blank"><img src="https://asciinema.org/a/698774.svg" /></a>
+
+## Prime number
+Command to start the game - `make brain-prime`
+<a href="https://asciinema.org/a/698839" target="_blank"><img src="https://asciinema.org/a/698839.svg" /></a>
