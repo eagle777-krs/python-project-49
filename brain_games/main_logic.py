@@ -2,8 +2,7 @@ from brain_games.cli import welcome_user
 
 def game(rule, request):
     print('Welcome to the Brain Games!')
-    name = input('May I have your name? ')
-    print(f'Hello, {name}!')
+    name = welcome_user()
     number_of_rounds = 3
 
     rule()
@@ -21,3 +20,8 @@ def game(rule, request):
             break
     else:
          print(f'Congratulations, {name}!')
+
+
+
+
+
