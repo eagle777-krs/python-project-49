@@ -1,13 +1,12 @@
-from brain_games.cli import welcome_user
-
 def game(rule, request):
     print('Welcome to the Brain Games!')
-    name = welcome_user()
-    number_of_rounds = 3
+    name = input('May I have your name? ')
+    print(f'Hello, {name}!')
+    NUMBER_OF_ROUNDS = 3
 
     rule()
 
-    for _ in range(number_of_rounds):
+    for _ in range(NUMBER_OF_ROUNDS):
 
         question, correct_answer = request()
 
@@ -20,8 +19,3 @@ def game(rule, request):
             break
     else:
          print(f'Congratulations, {name}!')
-
-
-
-
-

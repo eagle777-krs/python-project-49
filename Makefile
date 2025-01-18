@@ -1,6 +1,9 @@
 install: 
 	uv sync
 
+reinstall:
+	uv run --reinstall
+
 brain-games:
 	uv run brain-games
 

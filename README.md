@@ -3,6 +3,8 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/522aebdeeee79bb26479/maintainability)](https://codeclimate.com/github/eagle777-krs/python-project-/maintainability)
 
+### BRAIN GAMES ### consists of 5 thought-provoking games. Each game has three rounds through which you need to answer correctly. Wrong answer stops the game. After three right answers the game fnishes with the win of player
+
 # How to install
 
 ```bash
