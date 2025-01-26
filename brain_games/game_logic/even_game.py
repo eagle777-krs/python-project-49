@@ -1,10 +1,12 @@
 from random import randint
+
 from brain_games.main_logic import game
+
 
 def even_game():
 	
 	def rule():
-		 print('Answer "yes" if the number is even, otherwise answer "no".')
+		print('Answer "yes" if the number is even, otherwise answer "no".')
 
 	def request():
 		question = randint(1, 100)

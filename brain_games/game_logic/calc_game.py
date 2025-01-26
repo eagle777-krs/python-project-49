@@ -1,5 +1,7 @@
+from random import choice, randint
+
 from brain_games.main_logic import game
-from random import randint, choice
+
 
 def calc_game():
 
@@ -8,8 +10,8 @@ def calc_game():
 
 	def request():
 		operands = ['+', '-', '*']
-		first_num = randint(1,100)
-		second_num= randint(1,100)
+		first_num = randint(1, 100)
+		second_num = randint(1, 100)
 		answer = 0
 		operation = choice(operands)
 		
@@ -20,7 +22,7 @@ def calc_game():
 		elif operation == '-':
 			answer = first_num - second_num
 		elif operation == '*':
-                        answer = first_num * second_num
+			answer = first_num * second_num
 		correct_answer = str(answer)
 		
 		return question, correct_answer
