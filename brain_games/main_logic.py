@@ -18,4 +18,4 @@ def game(rule, request):
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\nLet's try again, {name}!")
             break
     else:
-         print(f'Congratulations, {name}!')
+        print(f'Congratulations, {name}!')
