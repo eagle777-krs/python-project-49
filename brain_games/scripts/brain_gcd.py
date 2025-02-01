@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from brain_games.game_logic.nod_game import nod_game
+from brain_games.games.nod_game import nod_game
 
 
 def main():
