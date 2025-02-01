@@ -17,21 +17,21 @@ make install
 # Games
 
 ## Checking a number for even
-Command to start the game - `make brain-even`
-<a href="https://asciinema.org/a/697925" target="_blank"><img src="https://asciinema.org/a/697925.svg" /></a>
+Command to start the game - `brain-even`
+<a href="https://asciinema.org/a/701036" target="_blank"><img src="https://asciinema.org/a/701036.svg" /></a>
 
 ## Calculator
-Command to start the game - `make brain-calc`
-<a href="https://asciinema.org/a/698177" target="_blank"><img src="https://asciinema.org/a/698177.svg" /></a>
+Command to start the game - `brain-calc`
+<a href="https://asciinema.org/a/701037" target="_blank"><img src="https://asciinema.org/a/701037.svg" /></a>
 
 ## Greatest Common Divisor
-Command to start the game - `make brain-gcm`
-<a href="https://asciinema.org/a/698220" target="_blank"><img src="https://asciinema.org/a/698220.svg" /></a>
+Command to start the game - `brain-gcm`
+<a href="https://asciinema.org/a/701038" target="_blank"><img src="https://asciinema.org/a/701038.svg" /></a>
 
 ## Arithmetic progression
-Command to start the game - `make brain-progression`
-<a href="https://asciinema.org/a/698774" target="_blank"><img src="https://asciinema.org/a/698774.svg" /></a>
+Command to start the game - `brain-progression`
+<a href="https://asciinema.org/a/701040" target="_blank"><img src="https://asciinema.org/a/701040.svg" /></a>
 
 ## Prime number
-Command to start the game - `make brain-prime`
-<a href="https://asciinema.org/a/698839" target="_blank"><img src="https://asciinema.org/a/698839.svg" /></a>
+Command to start the game - `brain-prime`
+<a href="https://asciinema.org/a/701041" target="_blank"><img src="https://asciinema.org/a/701041.svg" /></a>

@@ -2,7 +2,6 @@ from random import randint
 
 from brain_games.main_logic import game
 
-
 def even_game():
 	
 	def rule():
