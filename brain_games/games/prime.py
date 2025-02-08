@@ -1,5 +1,4 @@
 from math import sqrt
-
 from brain_games.config import RULES
 from brain_games.engine import game
 from brain_games.random_number_gen import get_random_number
@@ -21,7 +20,7 @@ def is_prime(num):
 
 def prime_request():
     question = get_random_number()
-    answer = is_prime(question)
+    answer = 'yes' if is_prime(question) else 'no'
     return question, answer
 
 
