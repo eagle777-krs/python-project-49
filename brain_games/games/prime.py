@@ -1,4 +1,5 @@
 from math import sqrt
+
 from brain_games.config import RULES
 from brain_games.engine import game
 from brain_games.random_number_gen import get_random_number
