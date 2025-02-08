@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-from brain_games.games.nod_game import nod_game
+from brain_games.games.gcd import gcd_game
 
 
 def main():
-	nod_game()
+	gcd_game()
 
 
 if __name__ == '__main__':

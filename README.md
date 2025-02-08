@@ -5,6 +5,12 @@
 
 ### BRAIN GAMES project consists of 5 thought-provoking games. Each game has three rounds through which player needs to answer correctly. Wrong answer stops the game. After three right answers the game finishes with the player's win
 
+## Technology Stack
+- Python 3.12
+- uv Package Manager (Dependency Manager)
+- Ruff (Linter)
+- Hexlet Checker
+
 # How to install
 
 ```bash
@@ -12,6 +18,18 @@
 git clone https://github.com/eagle777-krs/python-project-49
 cd python-project-49
 make install
+```
+
+# How to reinstall
+```bash
+cd python-project-49
+make reinstall
+```
+
+# How to delete
+```bash
+#Navigate to the root directory
+rm -rf python-project-49
 ```
 
 # Games
