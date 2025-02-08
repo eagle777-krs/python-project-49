@@ -12,7 +12,7 @@ def gcd_rule():
 def gcd_generating():
     first_number = get_random_number()
     second_number = get_random_number()
-    answer = gcd(first_number, second_number)
+    answer = str(gcd(first_number, second_number))
     return first_number, second_number, answer
 
 
