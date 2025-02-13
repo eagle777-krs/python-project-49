@@ -7,8 +7,8 @@
 
 ## Technology Stack
 - Python 3.12
-- uv Package Manager (Dependency Manager)
-- Ruff (Linter)
+- uv Package Manager (Dependency Manager) 0.5.15
+- Ruff (Linter) 0.8.6
 - Hexlet Checker
 
 # How to install

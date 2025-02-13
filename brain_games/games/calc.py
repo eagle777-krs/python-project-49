@@ -1,37 +1,31 @@
 from random import choice
 
-from brain_games.config import RULES
+from brain_games.consts import RULES
 from brain_games.engine import game
-from brain_games.random_number_gen import get_random_number
+from brain_games.utils import get_random_number
 
 
 def calc_rule():
     print(RULES['calc'])
 
 
-def calc_generating():
-    operands = ['+', '-', '*']
-    first_num = get_random_number()
-    second_num = get_random_number()
-    answer = 0
-    operation = choice(operands)
+def calc_operation(num1, num2):
+    operation = choice(['+', '-', '*'])
+    operation_list = {'+': lambda a, b: a + b,
+                      '-': lambda a, b: a - b,
+                      '*': lambda a, b: a * b}
 
-    if operation == '+':
-        answer = first_num + second_num
-    elif operation == '-':
-        answer = first_num - second_num
-    elif operation == '*':
-        answer = first_num * second_num
-
-    return first_num, second_num, operation, answer
+    return operation_list[operation](num1, num2), operation
 
 
-def calc_request():
-    first_num, second_num, operation, answer = calc_generating()
+def calc_data():
+    first_num, second_num = get_random_number(), get_random_number()
+    answer, operation = calc_operation(first_num, second_num)
+
     question = f'{first_num} {operation} {second_num}'
     correct_answer = str(answer)
     return question, correct_answer
 
 
 def calc_game():
-    game(calc_rule, calc_request)
+    game(calc_rule, calc_data)

@@ -1,9 +1,9 @@
 import prompt
 
-from brain_games.config import NUMBER_OF_ROUNDS
+from brain_games.consts import NUMBER_OF_ROUNDS
 
 
-def game(rule, request):
+def game(rule, game_data):
     name = prompt.string('Welcome to the Brain Games!\nMay I have your name? ')
     print(f'Hello, {name}!')
 
@@ -11,7 +11,7 @@ def game(rule, request):
 
     for _ in range(NUMBER_OF_ROUNDS):
 
-        question, correct_answer = request()
+        question, correct_answer = game_data()
 
         print(f'Question: {question}')
         answer = prompt.string('Your answer: ')

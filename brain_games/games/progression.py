@@ -1,15 +1,15 @@
 from random import randint
 
-from brain_games.config import RULES
+from brain_games.consts import RULES
 from brain_games.engine import game
-from brain_games.random_number_gen import get_random_number
+from brain_games.utils import get_random_number
 
 
 def prog_rule():
     print(RULES['progression'])
 
 
-def prog_request():
+def prog_data():
     progression = []
     current_number = get_random_number()
     gap = get_random_number()
@@ -28,4 +28,4 @@ def prog_request():
 
 
 def progression_game():
-    game(prog_rule, prog_request)
+    game(prog_rule, prog_data)
