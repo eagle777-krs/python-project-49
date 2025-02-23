@@ -22,6 +22,6 @@ def prime_get_question_and_answer():
 
 
 def prime_game():
-    game(RULES['prime'], prime_get_question_and_answer())
+    game(RULES['prime'], prime_get_question_and_answer)
 
 
