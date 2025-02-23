@@ -13,4 +13,4 @@ def gcd_get_question_and_answer():
 
 
 def gcd_game():
-    game(RULES['gcd'], gcd_get_question_and_answer())
+    game(RULES['gcd'], gcd_get_question_and_answer)
