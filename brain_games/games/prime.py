@@ -5,10 +5,6 @@ from brain_games.engine import game
 from brain_games.utils import get_random_number
 
 
-def prime_rule():
-    print(RULES['prime'])
-
-
 def is_prime(num):
     if num < 2:
         return False
@@ -19,16 +15,13 @@ def is_prime(num):
     return True
 
 
-def prime_data():
+def prime_get_question_and_answer():
     question = get_random_number()
     answer = 'yes' if is_prime(question) else 'no'
     return question, answer
 
 
 def prime_game():
-    game(prime_rule, prime_data)
-
-
-
+    game(RULES['prime'], prime_get_question_and_answer())
 
 

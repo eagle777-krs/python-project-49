@@ -5,27 +5,23 @@ from brain_games.engine import game
 from brain_games.utils import get_random_number
 
 
-def prog_rule():
-    print(RULES['progression'])
-
-
-def prog_data():
+def prog_get_question_and_answer():
     progression = []
-    current_number = get_random_number()
-    gap = get_random_number()
+    first_num = get_random_number()
+    diff = get_random_number()
 
     for _ in range(10):
-        progression.append(str(current_number))
-        current_number += gap
+        progression.append(str(first_num))
+        first_num += diff
 
-    index = randint(0, 9)
-    correct_answer = str(progression.pop(index))
+    missed_number_id = randint(0, 9)
+    correct_answer = str(progression.pop(missed_number_id))
 
-    progression.insert(index, '..')
+    progression.insert(missed_number_id, '..')
     question = ' '.join(progression)
 
     return question, correct_answer
 
 
 def progression_game():
-    game(prog_rule, prog_data)
+    game(RULES['progression'], prog_get_question_and_answer)

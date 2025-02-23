@@ -5,27 +5,21 @@ from brain_games.engine import game
 from brain_games.utils import get_random_number
 
 
-def calc_rule():
-    print(RULES['calc'])
+def get_random_math_sign_and_result(first_num, second_num):
+    sign, result = choice([
+        ('+', first_num + second_num),
+        ('-', first_num - second_num),
+        ('*', first_num * second_num)
+    ])
+    return f'{first_num} {sign} {second_num}', result
 
 
-def calc_operation(num1, num2):
-    operation = choice(['+', '-', '*'])
-    operation_list = {'+': lambda a, b: a + b,
-                      '-': lambda a, b: a - b,
-                      '*': lambda a, b: a * b}
-
-    return operation_list[operation](num1, num2), operation
-
-
-def calc_data():
+def calc_get_question_and_answer():
     first_num, second_num = get_random_number(), get_random_number()
-    answer, operation = calc_operation(first_num, second_num)
-
-    question = f'{first_num} {operation} {second_num}'
-    correct_answer = str(answer)
-    return question, correct_answer
+    question, answer = get_random_math_sign_and_result(first_num, second_num)
+    return question, str(answer)
 
 
 def calc_game():
-    game(calc_rule, calc_data)
+    game(RULES['calc'], calc_get_question_and_answer)
+
