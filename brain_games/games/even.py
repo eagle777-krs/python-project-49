@@ -4,6 +4,7 @@ from brain_games.utils import get_random_number
 
 RULES_EVEN = RULES['even']
 
+
 def is_even(num):
     return num % 2 == 0
 

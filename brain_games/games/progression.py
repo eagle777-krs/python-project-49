@@ -1,10 +1,12 @@
 from random import randint
+
 from brain_games.consts import RULES
 from brain_games.engine import game
 from brain_games.utils import get_random_number
 
 RULES_PROGRESSION = RULES['progression']
 ROW_LENGTH = 10
+
 
 def get_question_and_answer():
     progression = []
@@ -22,6 +24,7 @@ def get_question_and_answer():
     question = ' '.join(progression)
 
     return question, correct_answer
+
 
 def progression_game():
     game(RULES_PROGRESSION, get_question_and_answer)

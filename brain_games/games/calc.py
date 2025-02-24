@@ -1,4 +1,5 @@
 from random import choice
+
 from brain_games.consts import RULES
 from brain_games.engine import game
 from brain_games.utils import get_random_number
