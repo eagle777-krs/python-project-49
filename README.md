@@ -32,7 +32,7 @@ rm -rf python-project-49
 ```
 
 # Games
-
+### If asciinema is not shown, reload the page
 ## Checking a number for even
 Command to start the game - `brain-even`
 <a href="https://asciinema.org/a/701036" target="_blank"><img src="https://asciinema.org/a/701036.svg" /></a>
