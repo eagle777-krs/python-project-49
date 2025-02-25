@@ -1,7 +1,7 @@
 from random import choice
 
 from brain_games.consts import RULES
-from brain_games.engine import game
+from brain_games.engine import run_game
 from brain_games.utils import get_random_number
 
 
@@ -21,4 +21,4 @@ def get_math_question_and_result():
 
 
 def calc_game():
-    game(RULES['calc'], get_math_question_and_result)
+    run_game(RULES['calc'], get_math_question_and_result)
